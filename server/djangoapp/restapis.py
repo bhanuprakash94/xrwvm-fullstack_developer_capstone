@@ -22,7 +22,7 @@ def get_request(endpoint, **kwargs):
     try:
         response = requests.get(request_url)
         return response.json()
-    except:
+    except:  # noqa: E722
         print("Network exception occurred")
 
 
