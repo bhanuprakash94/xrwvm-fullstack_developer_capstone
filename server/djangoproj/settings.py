@@ -98,7 +98,7 @@ DATABASES = {
 AUTH_PASSWORD_VALIDATORS = [
     {"NAME":
      "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"
-    },# noqa: E124
+    },  # noqa: E124
     {"NAME":
      "django.contrib.auth.password_validation.MinimumLengthValidator"},
     {"NAME":
