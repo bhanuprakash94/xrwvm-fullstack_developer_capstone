@@ -42,5 +42,5 @@ def post_review(data_dict):
         response = requests.post(request_url, json=data_dict)
         print(response.json())
         return response.json()
-    except:
+    except:  # noqa: E722
         print("Network exception occurred")
