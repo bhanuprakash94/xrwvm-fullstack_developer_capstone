@@ -11,9 +11,11 @@ from django.http import JsonResponse
 from django.contrib.auth import login, authenticate
 import logging
 import json
+import requests
 from django.views.decorators.csrf import csrf_exempt
 from .populate import initiate
 from .models import CarMake, CarModel
+from .restapis import get_request,post_review
 
 
 # Get an instance of a logger
